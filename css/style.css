@@ -1,0 +1,550 @@
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@font-face {
+  font-family: "Literature Decor";
+  src: url("../fonts/Literature-Decor.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.main-header {
+  margin: 0 auto;
+  width: 920px;
+  padding: 16px 180px;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav .site-navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  width: 283px;
+}
+
+.container-nav {
+  margin: 0;
+  padding: 0;
+  width: 222px;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.site-navigation a,
+.signin {
+  color: rgb(0, 0, 0);
+  list-style: none;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.with-divider {
+  padding-left: 25px;
+  padding-right: 5px;
+  border-right: 1px solid black;
+}
+
+.social-item.left {
+  padding-right: 15px;
+}
+
+.hero {
+  margin: 0 auto;
+  position: relative;
+  padding-right: 120px;
+  width: 1160px;
+  margin-bottom: 90px;
+}
+
+.hero-logo-container {
+  position: absolute;
+  width: 524px;
+  left: 458px;
+  top: 20px;
+}
+
+.hero-logo-container h1 {
+  transform: rotate(-0.35deg);
+  margin: 0;
+  font-family: "Literature Decor";
+  font-weight: 400;
+  font-size: 95px;
+  line-height: 108px;
+}
+
+.hero-logo-1 {
+  text-indent: 38%;
+}
+
+.hero-logo-2 {
+  text-indent: 30%;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-content-container {
+  width: 500px;
+  margin-top: 347px;
+}
+
+.hero-content-container p {
+  line-height: 22px;
+  white-space: pre-line;
+  text-indent: 49px;
+  margin: 0;
+}
+
+.link-container {
+  width: 300px;
+  margin-left: auto;
+}
+
+.link-container a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.link-container p {
+  margin: 0;
+  padding: 30px 62px;
+  text-indent: 0;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: "Literature Decor";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.articles {
+  margin: 0 auto;
+  padding: 0 180px;
+  width: 920px;
+  margin-bottom: 100px;
+}
+
+.articles h2 {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Literature Decor";
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+
+.articles-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 920px;
+  list-style: none;
+}
+
+.articles ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.articles li {
+  box-sizing: border-box;
+  width: 230px;
+  margin: -0.5px;
+  border: 1px solid #000000;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  width: 177px;
+  height: 375px;
+  margin: 0 auto;
+}
+
+.articles-item a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.articles-item p {
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.articles-item h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.response {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 31px;
+}
+
+.likes {
+  margin-right: 14px;
+}
+
+.likes a,
+.comments a {
+  display: flex;
+  gap: 2px;
+}
+
+.response a,
+.response p {
+  margin: 0;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.link-container.mini {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 250px;
+}
+
+.link-container.mini p {
+  font-size: 12px;
+  padding: 23px 45px;
+}
+
+.podcasts {
+  margin: 0 auto;
+  padding: 0 180px;
+  width: 920px;
+  margin-bottom: 140px;
+}
+
+.podcasts-list {
+  margin: 0;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.podcasts h2 {
+  margin: 0;
+  margin-bottom: 55px;
+  font-family: "Literature Decor";
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+
+.podcasts-item {
+  gap: 40px;
+  flex-direction: column;
+}
+
+.podcasts-item a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.podcasts-item img {
+  margin-bottom: 15px;
+}
+
+.podcasts-item h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.podcasts-item p {
+  font-size: 14px;
+  margin: 0;
+
+}
+
+
+.link-container.mini.podcasts p {
+  padding: 23px 35px;
+}
+
+.main-footer {
+  width: 920px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.main-footer-container {
+  width: 523px;
+}
+
+
+.main-footer p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.articles .articles-page {
+  margin-bottom: 40px;
+}
+
+.pagination-container {
+  width: 420px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.pagination-container ul {
+  display: flex;
+  gap: 10px;
+}
+
+.pagination-container li {
+  width: 40px;
+  font-family: "Literature Decor";
+  font-size: 24px;
+  text-align: center;
+}
+
+.pagination-container a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.pagination-container p {
+  padding: 10px 10px;
+  width: 18px;
+  margin: 0;
+}
+
+.pagination-item .ellipsis {
+  border: none;
+}
+
+.pagination-container .page-prev,
+.pagination-container .page-next {
+  padding: 4px 7px;
+}
+
+.page-next img {
+  transform: rotate(180deg);
+}
+
+.articles .ellipsis {
+  width: 10px;
+  border: none;
+  padding: 0;
+  padding-top: 21px;
+}
+
+.articles h2 {
+  margin-top: 40px;
+}
+
+.article-page {
+  width: 920px;
+  margin: 0 auto;
+}
+
+.article-page-hero {
+  width: 784px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.article-page-hero h1 {
+  font-family: "Literature Decor";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.article-page-hero img {
+  margin: 0 auto;
+}
+
+.article-page-content-container h2 {
+  margin: 0;
+  width: 293px;
+  font-family: "Literature Decor";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.article-page-content p {
+  margin: 0;
+  margin-left: auto;
+  width: 500px;
+  font-family: "Manrope";
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 60px;
+}
+
+.article-page-content-container p {
+  margin-bottom: 30px;
+}
+
+
+.article-page-content-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.comment-form{
+  display:flex;
+  margin-bottom:70px;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction:column;
+}
+
+.comment-form .visually-hidden {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.comment-form img, .comments-list img {
+  border-radius: 50px;
+  margin-right: 25px;
+}
+
+.comment-form textarea {
+  margin: auto 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  width: 795px;
+  height: 26px;
+  resize: none;
+  border-bottom: 1px solid #000000;
+  color: rgba(0, 0, 0, 1);
+  font-family: "Manrope";
+  font-size: 16px;
+}
+
+.comment-form button{
+  padding:0;
+  margin-left:auto;
+  background-color:white;
+  border:none;
+  font-size: 16px;
+}
+.comments-list{
+  margin:0;
+  padding: 0;
+}
+.comments-list li{
+ list-style: none;
+}
+.comments-item{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.comment-meta{
+  display:flex;
+  margin-bottom:12px;
+}
+.comment-text p{
+margin:0;
+margin-bottom: 10px;
+line-height: 22px;
+font-size: 16px;
+}
+.comment-meta .comment-author {
+margin:0;
+font-size: 18px;
+font-weight: 500;
+margin-right:10px;
+}
+.comment-meta .comment-time{
+margin:0;
+font-size: 14px;
+font-weight: 300;
+}
+
+.comment-text{
+  display: flex;
+  flex-direction: column;
+}
+.comments-item button{
+  margin:0;
+  padding:0;
+  background-color:white;
+  border:none;
+  font-size: 16px;
+  margin-left: auto;
+}
+
+.comments-list-children{
+  padding: 0;
+  margin-left:116px;
+}
+
+.comments-list-children .comment-content .comment-author{
+font-size: 16px;
+font-weight: 500;
+}
+
+.comments-list-children .comment-content .comment-time{
+font-size: 12px;
+}
+
+.comments-list-children .comment-text p{
+font-size: 14px;
+line-height: 19px;
+}
+.comments-list-children .comment-text span{
+  font-weight: 600;
+}
+
+.comments-list-children button{
+ font-size: 14px;
+font-weight: 300; 
+}
+
+
