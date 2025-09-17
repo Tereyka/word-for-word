@@ -185,37 +185,38 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.articles-item p {
-  font-size: 9px;
+.article-content .date {
+  font-size: 14px;
   font-weight: 500;
   line-height: 14px;
 }
 
 .articles-item h3 {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 22px;
 }
 
 .response {
   display: flex;
   margin-top: auto;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .likes_container{
   margin-right: 14px;
   display:flex;
   gap:3px;
- align-items: center;
+  align-items: center;
 }
 
 .likes_container .heart {
   background: url('../img/Likes.svg') no-repeat center center;
   background-size: contain;
   border:none;
-  width:10px;
-  height:10px;
+  width:14px;
+  height:14px;
   cursor: pointer;
 }
 
@@ -223,14 +224,14 @@ body {
   background: url('../img/Likes_added.svg') no-repeat center center;
   background-size: contain;
   border:none;
-  width:10px;
-  height:10px;
+  width:14px;
+  height:14px;
   cursor: pointer;
 }
 
-.likes_container .likes{
+.likes_container .likes_number{
   font-family: "Manrope";
-  font-size: 10px;
+  font-size: 14px;
   line-height: 14px;
 }
 

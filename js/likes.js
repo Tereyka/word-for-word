@@ -1,18 +1,13 @@
 let heart = document.querySelector('.heart');
-let likes = document.querySelector('.likes');
+let likes_number = document.querySelector('.likes_number');
 
 heart.addEventListener('click', (e) => {
     if (heart.classList.contains('heart_added')) {
-        likes.textContent = Number(likes.textContent) - 1;
+        likes_number.textContent = Number(likes_number.textContent) - 1;
     } else {
-        likes.textContent = Number(likes.textContent) + 1;
+        likes_number.textContent = Number(likes_number.textContent) + 1;
     }
     e.preventDefault();   // блокируем переход
     e.stopPropagation();  // останавливаем клик по карточке
     heart.classList.toggle('heart_added');
-});
-
-likes.addEventListener('click', (e) => {
-  e.preventDefault();
-  e.stopPropagation();
 });
