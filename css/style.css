@@ -203,15 +203,39 @@ body {
   margin-bottom: 31px;
 }
 
-.likes {
+.likes_container{
   margin-right: 14px;
+  display:flex;
+  gap:3px;
+ align-items: center;
 }
 
-.likes a,
-.comments a {
-  display: flex;
-  gap: 2px;
+.likes_container .heart {
+  background: url('../img/Likes.svg') no-repeat center center;
+  background-size: contain;
+  border:none;
+  width:10px;
+  height:10px;
+  cursor: pointer;
 }
+
+.likes_container .heart_added{
+  background: url('../img/Likes_added.svg') no-repeat center center;
+  background-size: contain;
+  border:none;
+  width:10px;
+  height:10px;
+  cursor: pointer;
+}
+
+.likes_container .likes{
+  font-family: "Manrope";
+  font-size: 10px;
+  line-height: 14px;
+}
+
+
+
 
 .response a,
 .response p {
