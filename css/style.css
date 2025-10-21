@@ -231,12 +231,14 @@ body {
 
 .likes_container .likes_number{
   font-family: "Manrope";
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
 }
 
-
-
+.comments a{
+  display:flex;
+  gap:5px;
+  align-items: center;
+}
 
 .response a,
 .response p {
