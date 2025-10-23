@@ -13,14 +13,25 @@ body {
   font-weight: normal;
 }
 
+.main-content {
+  margin-top: 50px;
+}
+
 .main-header {
-  margin: 0 auto;
-  width: 920px;
-  padding: 16px 180px;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
 }
 
 .main-nav {
   display: flex;
+  width: 920px;
 }
 
 .main-nav .site-navigation {
@@ -39,27 +50,224 @@ body {
   list-style: none;
   display: flex;
   margin-left: auto;
-  justify-content: flex-start;
   gap: 5px;
 }
 
-.site-navigation a,
-.signin {
+.site-navigation a {
   color: rgb(0, 0, 0);
   list-style: none;
   font-size: 14px;
   text-decoration: none;
 }
 
-.with-divider {
-  padding-left: 25px;
-  padding-right: 5px;
-  border-right: 1px solid black;
+.signin_btn,
+.registration_btn {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
-.social-item.left {
-  padding-right: 15px;
+.signin_modal,
+.registration_modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /*Черный с непрозрачностью */
+  display: none;
 }
+
+.signin_modal_content,
+.registration_modal_content {
+  margin: 15vh auto 25vh auto;
+  width: 480px;
+  height: auto;
+  background-color: white;
+  border-radius: 12px;
+  font-family: 'Literature Decor';
+  padding: 40px 50px;
+}
+
+.signin-form,
+.registration-form {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.signin-form-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 40px;
+  width:480px;
+}
+
+.signin-form legend,
+.registration-form legend {
+  font-size: 48px;
+  padding: 0;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.signin_close_btn {
+  margin-left: 148px;
+}
+
+.registration_close_btn {
+  margin-left: 40px;
+}
+
+.signin_close_btn,
+.registration_close_btn {
+  width:20px;
+  height:20px;
+  background-image: url(../img/Close.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border:none;
+  cursor:pointer;
+  background-color: transparent;
+}
+
+.signin-form ul,
+.registration-form ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+}
+
+.signin-form li,
+.registration-form li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: 'Manrope';
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  font-size: 16px;
+}
+
+.signin-form input,
+.registration-form input {
+  font-size: 14px;
+  width: 450px;
+  padding: 10px 14px;
+  border-radius: 3px;
+  border: 1px solid #000;
+}
+
+.signin-form-btn,
+.registration-form-btn {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 3px;
+  border: 1px solid #000;
+  font-size: 18px;
+  background-color: transparent;
+  font-family: 'Literature Decor';
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.signin-form-btn:hover,
+.registration-form-btn:hover {
+  background: #d4d4d4;
+  transition: 0.2s;
+}
+
+ul .agree_checkbox input{
+  width: 16px;
+  height: 16px;
+}
+
+ul .agree_checkbox{
+display:flex;
+font-size: 14px;
+flex-direction: row;
+}
+
+ul .agree_checkbox a{
+  text-decoration: none;
+  margin:0;
+  color: rgb(105, 48, 48);
+}
+
+
+
+.form-bottom {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.signin-form p,
+.registration-form p {
+  margin: 0;
+  font-family: 'Manrope';
+  font-size: 16px;
+}
+
+.signin-vk-btn,
+.signin-tg-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.signin-vk-btn {
+  background-image: url(../img/VKontakte.svg);
+  background-size: 30px;
+  background-position: center;
+  width: 45px;
+  height: 30px;
+  background-repeat: no-repeat;
+  padding: 0;
+
+}
+
+.signin-tg-btn {
+  background-image: url(../img/Telegram.svg);
+  background-size: 25px;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.form-switch-text {
+  margin-left:auto;
+  display: flex ;
+  align-items:center;
+  gap:15px;
+}
+
+.form-bottom-btn {
+  margin-left: auto;
+  border:1px solid black;
+  border-radius:3px;
+  font-size: 16px;
+  background-color: transparent;
+  font-family: 'Literature Decor';
+  cursor: pointer;
+  text-transform: uppercase;
+  padding:5px 10px;
+}
+
+
 
 .hero {
   margin: 0 auto;
@@ -204,39 +412,39 @@ body {
   margin-bottom: 30px;
 }
 
-.likes_container{
+.likes_container {
   margin-right: 14px;
-  display:flex;
-  gap:3px;
+  display: flex;
+  gap: 5px;
   align-items: center;
 }
 
 .likes_container .heart {
   background: url('../img/Likes.svg') no-repeat center center;
   background-size: contain;
-  border:none;
-  width:14px;
-  height:14px;
+  border: none;
+  width: 14px;
+  height: 14px;
   cursor: pointer;
 }
 
-.likes_container .heart_added{
+.likes_container .heart_added {
   background: url('../img/Likes_added.svg') no-repeat center center;
   background-size: contain;
-  border:none;
-  width:14px;
-  height:14px;
+  border: none;
+  width: 14px;
+  height: 14px;
   cursor: pointer;
 }
 
-.likes_container .likes_number{
+.likes_container .likes_number {
   font-family: "Manrope";
   font-size: 16px;
 }
 
-.comments a{
-  display:flex;
-  gap:5px;
+.comments a {
+  display: flex;
+  gap: 5px;
   align-items: center;
 }
 
@@ -350,6 +558,7 @@ body {
 .pagination-container {
   width: 420px;
   margin: 0 auto;
+  margin-top: 50px;
   justify-content: space-between;
 }
 
@@ -396,8 +605,8 @@ body {
   padding-top: 21px;
 }
 
-.articles h2 {
-  margin-top: 40px;
+.articles-page {
+  margin-top: 80px;
 }
 
 .article-page {
@@ -457,14 +666,14 @@ body {
   margin-bottom: 60px;
 }
 
-.comment-form{
-  display:flex;
-  margin-bottom:70px;
+.comment-form {
+  display: flex;
+  margin-bottom: 70px;
 }
 
 .comments-container {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 
 .comment-form .visually-hidden {
@@ -474,7 +683,8 @@ body {
   font-weight: 200;
 }
 
-.comment-form img, .comments-list img {
+.comment-form img,
+.comments-list img {
   border-radius: 50px;
   margin-right: 25px;
 }
@@ -493,85 +703,91 @@ body {
   font-size: 16px;
 }
 
-.comment-form button{
-  padding:0;
-  margin-left:auto;
-  background-color:white;
-  border:none;
+.comment-form button {
+  padding: 0;
+  margin-left: auto;
+  background-color: white;
+  border: none;
   font-size: 16px;
 }
-.comments-list{
-  margin:0;
+
+.comments-list {
+  margin: 0;
   padding: 0;
 }
-.comments-list li{
- list-style: none;
+
+.comments-list li {
+  list-style: none;
 }
-.comments-item{
+
+.comments-item {
   display: flex;
   margin-bottom: 50px;
 }
 
-.comment-meta{
-  display:flex;
-  margin-bottom:12px;
-}
-.comment-text p{
-margin:0;
-margin-bottom: 10px;
-line-height: 22px;
-font-size: 16px;
-}
-.comment-meta .comment-author {
-margin:0;
-font-size: 18px;
-font-weight: 500;
-margin-right:10px;
-}
-.comment-meta .comment-time{
-margin:0;
-font-size: 14px;
-font-weight: 300;
+.comment-meta {
+  display: flex;
+  margin-bottom: 12px;
 }
 
-.comment-text{
+.comment-text p {
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.comment-meta .comment-author {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.comment-meta .comment-time {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.comment-text {
   display: flex;
   flex-direction: column;
 }
-.comments-item button{
-  margin:0;
-  padding:0;
-  background-color:white;
-  border:none;
+
+.comments-item button {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border: none;
   font-size: 16px;
   margin-left: auto;
 }
 
-.comments-list-children{
+.comments-list-children {
   padding: 0;
-  margin-left:116px;
+  margin-left: 116px;
 }
 
-.comments-list-children .comment-content .comment-author{
-font-size: 16px;
-font-weight: 500;
+.comments-list-children .comment-content .comment-author {
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.comments-list-children .comment-content .comment-time{
-font-size: 12px;
+.comments-list-children .comment-content .comment-time {
+  font-size: 12px;
 }
 
-.comments-list-children .comment-text p{
-font-size: 14px;
-line-height: 19px;
+.comments-list-children .comment-text p {
+  font-size: 14px;
+  line-height: 19px;
 }
-.comments-list-children .comment-text span{
+
+.comments-list-children .comment-text span {
   font-weight: 600;
 }
 
-.comments-list-children button{
- font-size: 14px;
-font-weight: 300; 
+.comments-list-children button {
+  font-size: 14px;
+  font-weight: 300;
 }
-
-

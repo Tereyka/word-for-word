@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
 document.addEventListener('DOMContentLoaded', () => {
   fetch('partials/footer.html')
     .then(response => response.text())

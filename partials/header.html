@@ -1,17 +1,91 @@
-    <header class="main-header">
-        <nav class="main-nav">
-            <ul class="site-navigation">
-                <li class="site-navigation-item"><a href="index.html">Главная страница</a></li>
-                <li class="site-navigation-item"><a href="articles.html">Статьи</a></li>
-                <li class="site-navigation-item"><a href="#">Подкасты</a></li>
-            </ul>
-            <ul class="container-nav">
-                <li><a class="social-item left" href="#" target="_blank"><img src="img/Telegram.svg" width="17"
-                            height="15" alt="Телеграм"></a></li>
-                <li><a class="social-item" href="#" target="_blank"><img src="img/VKontakte.svg" width="25" height="15"
-                            alt="Вконтакте"></a></li>
-                <li><a class="signin with-divider" href="#">Вход</a></li>
-                <li><a class="signin" href="#">Регистрация</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="main-header">
+    <nav class="main-nav">
+        <ul class="site-navigation">
+            <li class="site-navigation-item"><a href="index.html">Главная страница</a></li>
+            <li class="site-navigation-item"><a href="articles.html">Статьи</a></li>
+            <li class="site-navigation-item"><a href="#">Подкасты</a></li>
+        </ul>
+        <ul class="container-nav">
+            <li><a class="social-item left" href="#" target="_blank"><img src="img/Telegram.svg" width="17" height="15"
+                        alt="Телеграм"></a></li>
+            <li><a class="social-item" href="#" target="_blank"><img src="img/VKontakte.svg" width="25" height="15"
+                        alt="Вконтакте"></a></li>
+            <button class="signin_btn">Вход</button>
+            <div class="signin_modal">
+                <div class="signin_modal_content">
+                    <fieldset class="signin-form">
+                        <div class="signin-form-header">
+                            <legend>Вход</legend>
+                            <button class="signin_close_btn"></button>
+                        </div>
+                        <ul>
+                            <li>
+                                <label for='email'>EMAIL</label>
+                                <input type="email" id='email' name="email" placeholder="Электронная почта" required>
+                            </li>
+                            <li>
+                                <label for='password'>Пароль</label>
+                                <input type="password" id='password' name="password" placeholder="Пароль" required>
+                            </li>
+                        </ul>
+                        <button type='submit' class="signin-form-btn">Войти</button>
+                        <div class="form-bottom">
+                            <p>или</p>
+                            <button class="signin-vk-btn"></button>
+                            <button class="signin-tg-btn"></button>
+                            <button class="form-bottom-btn">Зарегистрироваться</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <button class="registration_btn">Регистрация</button>
+            <div class="registration_modal">
+                <div class="registration_modal_content">
+                    <fieldset class="registration-form">
+                        <div class="signin-form-header">
+                            <legend>Регистрация</legend>
+                            <button class="registration_close_btn"></button>
+                        </div>
+                        <ul>
+                            <li>
+                                <label for='username'>Имя</label>
+                                <input type="text" id='username' name="username" placeholder="Имя пользователя"
+                                    required>
+                            </li>
+                            <li>
+                                <label for='email'>EMAIL</label>
+                                <input type="email" id='email' name="email" placeholder="Электронная почта" required>
+                            </li>
+                            <li>
+                                <label for='password'>Пароль</label>
+                                <input type="password" id='password' name="password" placeholder="Пароль" required>
+                            </li>
+                            <li>
+                                <label for='password-repeat'>Повторите пароль</label>
+                                <input type="password" id='password-repeat' name="password-repeat"
+                                    placeholder="Повторите пароль" required>
+                            </li>
+                            <li class="agree_checkbox">
+                                <input type="checkbox" name='agree' id="agree" required>
+                                <label for="agree">Я согласен с условиями <a href="#">Пользовательского
+                                        соглашения</a></label>
+                            </li>
+                        </ul>
+                        <button type='submit' class="registration-form-btn">Создать аккаунт</button>
+                        <div class="form-bottom">
+                            <p>или</p>
+                            <button class="signin-vk-btn"></button>
+                            <button class="signin-tg-btn"></button>
+                            <div class='form-switch-text'>
+                                <p class="">Уже зарегистрированы?</p>
+                                <button class="form-bottom-btn">Войти</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                    </fieldset>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <script src="js\sign_in_and_registration.js" defer></script>
+</header>
