@@ -101,16 +101,17 @@ body {
   border: none;
 }
 
-.signin-form-header {
+.form-header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 40px;
-  width:480px;
+  width: 480px;
 }
 
-.signin-form legend,
-.registration-form legend {
+.form-header h2{
+  margin: 0;
+  font-weight: 500;
   font-size: 48px;
   padding: 0;
   line-height: 100%;
@@ -127,13 +128,13 @@ body {
 
 .signin_close_btn,
 .registration_close_btn {
-  width:20px;
-  height:20px;
+  width: 20px;
+  height: 20px;
   background-image: url(../img/Close.png);
   background-size: contain;
   background-repeat: no-repeat;
-  border:none;
-  cursor:pointer;
+  border: none;
+  cursor: pointer;
   background-color: transparent;
 }
 
@@ -160,6 +161,22 @@ body {
   letter-spacing: 0.3px;
   font-size: 16px;
 }
+
+.invalid {
+  box-shadow: 1px 1px 1px rgb(184, 30, 30);
+} 
+
+.registration-form .email-error, .registration-form .password-error, .registration-form .password-confirm-error  {
+  color:rgb(184, 30, 30);
+  font-size: 14px;
+  margin-left: auto;
+  display:none;
+} 
+
+.registration-form .email-error.active, .registration-form  .password-error.active, .registration-form  .password-confirm-error.active {
+  display:block;
+} 
+
 
 .signin-form input,
 .registration-form input {
@@ -190,20 +207,20 @@ body {
   transition: 0.2s;
 }
 
-ul .agree_checkbox input{
+ul .agree_checkbox input {
   width: 16px;
   height: 16px;
 }
 
-ul .agree_checkbox{
-display:flex;
-font-size: 14px;
-flex-direction: row;
+ul .agree_checkbox {
+  display: flex;
+  font-size: 14px;
+  flex-direction: row;
 }
 
-ul .agree_checkbox a{
+ul .agree_checkbox a {
   text-decoration: none;
-  margin:0;
+  margin: 0;
   color: rgb(105, 48, 48);
 }
 
@@ -248,23 +265,24 @@ ul .agree_checkbox a{
   background-repeat: no-repeat;
   padding: 0;
 }
+
 .form-switch-text {
-  margin-left:auto;
-  display: flex ;
-  align-items:center;
-  gap:15px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .form-bottom-btn {
   margin-left: auto;
-  border:1px solid black;
-  border-radius:3px;
+  border: 1px solid black;
+  border-radius: 3px;
   font-size: 16px;
   background-color: transparent;
   font-family: 'Literature Decor';
   cursor: pointer;
   text-transform: uppercase;
-  padding:5px 10px;
+  padding: 5px 10px;
 }
 
 

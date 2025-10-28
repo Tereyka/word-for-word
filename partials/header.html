@@ -14,8 +14,8 @@
             <div class="signin_modal">
                 <div class="signin_modal_content">
                     <fieldset class="signin-form">
-                        <div class="signin-form-header">
-                            <legend>Вход</legend>
+                        <div class="form-header">
+                            <h2>Вход</h2>
                             <button class="signin_close_btn"></button>
                         </div>
                         <ul>
@@ -41,48 +41,55 @@
             <button class="registration_btn">Регистрация</button>
             <div class="registration_modal">
                 <div class="registration_modal_content">
-                    <fieldset class="registration-form">
-                        <div class="signin-form-header">
-                            <legend>Регистрация</legend>
-                            <button class="registration_close_btn"></button>
-                        </div>
-                        <ul>
-                            <li>
-                                <label for='username'>Имя</label>
-                                <input type="text" id='username' name="username" placeholder="Имя пользователя"
-                                    required>
-                            </li>
-                            <li>
-                                <label for='email'>EMAIL</label>
-                                <input type="email" id='email' name="email" placeholder="Электронная почта" required>
-                            </li>
-                            <li>
-                                <label for='password'>Пароль</label>
-                                <input type="password" id='password' name="password" placeholder="Пароль" required>
-                            </li>
-                            <li>
-                                <label for='password-repeat'>Повторите пароль</label>
-                                <input type="password" id='password-repeat' name="password-repeat"
-                                    placeholder="Повторите пароль" required>
-                            </li>
-                            <li class="agree_checkbox">
-                                <input type="checkbox" name='agree' id="agree" required>
-                                <label for="agree">Я согласен с условиями <a href="#">Пользовательского
-                                        соглашения</a></label>
-                            </li>
-                        </ul>
-                        <button type='submit' class="registration-form-btn">Создать аккаунт</button>
-                        <div class="form-bottom">
-                            <p>или</p>
-                            <button class="signin-vk-btn"></button>
-                            <button class="signin-tg-btn"></button>
-                            <div class='form-switch-text'>
-                                <p class="">Уже зарегистрированы?</p>
-                                <button class="form-bottom-btn">Войти</button>
+                    <form action="#" method="post" novalidate>
+                        <fieldset class="registration-form">
+                            <div class="form-header">
+                                <h2>Регистрация</h2>
+                                <button class="registration_close_btn"></button>
                             </div>
-                        </div>
-                    </fieldset>
-                    </fieldset>
+                            <ul>
+                                <li>
+                                    <label for='username'>Имя</label>
+                                    <input type="text" id='username' name="username" placeholder="Имя пользователя"
+                                        required>
+                                </li>
+                                <li class="form-item-email">
+                                    <label for='registration-email'>EMAIL</label>
+                                    <input type="email" id='registration-email' name="email"
+                                        placeholder="Электронная почта" required>
+                                    <p class='email-error'>Введите корректный адрес электронный почты</p>
+                                </li>
+                                <li class='form-item-password'>
+                                    <label for='registration-password'>Пароль</label>
+                                    <input type="password" id='registration-password' name="password"
+                                        placeholder="Пароль" required>
+                                    <p class='password-error'>Пароль должен быть не менее 8 символов</p>
+                                </li>
+                                <li class="form-item-password-confirm">
+                                    <label for='password-confirm'>Повторите пароль</label>
+                                    <input type="password" id='password-confirm' name="password-repeat"
+                                        placeholder="Повторите пароль" required>
+                                    <p class='password-confirm-error'>Пароли не совпадают</p>
+                                </li>
+                                <li class="agree_checkbox">
+                                    <input type="checkbox" name='agree' id="agree" required>
+                                    <label for="agree">Я согласен с условиями <a href="#">Пользовательского
+                                            соглашения</a></label>
+                                </li>
+                            </ul>
+                            <button type='submit' class="registration-form-btn">Создать аккаунт</button>
+                            <div class="form-bottom">
+                                <p>или</p>
+                                <button class="signin-vk-btn" type="button"></button>
+                                <button class="signin-tg-btn" type="button">></button>
+                                <div class='form-switch-text'>
+                                    <p class="">Уже зарегистрированы?</p>
+                                    <button class="form-bottom-btn" type="button">Войти</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
                 </div>
             </div>
         </ul>
